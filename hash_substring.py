@@ -3,10 +3,10 @@
 def read_input():
     text = input()
     if "I" in text:
-       pattern = str(input("input pattern: "))
-       text = str(input("input text: "))
-       pattern = pattern.rstrip()
-       text = text.rstrip()
+       pattern = str(input())
+       text = str(input())
+    #    pattern = pattern.rstrip()
+    #    text = text.rstrip()
     elif "F" in text:
        nosaukums = input()
        with open("nosaukums") as my_file:
