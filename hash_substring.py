@@ -3,8 +3,7 @@
 def read_input():
     text = input()
     if "I" in text:
-       pattern = str(input("input pattern: "))
-       text = str(input("input text: "))
+       pattern,text = map(str,input().split(" "))
        pattern = pattern.rstrip()
        text = text.rstrip()
     elif "F" in text:
@@ -14,7 +13,6 @@ def read_input():
             text = nosaukums.readline()
             pattern = pattern.rstrip()
             text = text.rstrip()
-    print(pattern,text)
     return pattern, text
             
     # this function needs to aquire input both from keyboard and file
