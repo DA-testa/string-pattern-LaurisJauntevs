@@ -9,7 +9,7 @@ def read_input():
        text = text.rstrip()
     elif "F" in text:
        nosaukums = input()
-       with open(nosaukums) as file:
+       with open("tests/" + nosaukums) as file:
             pattern = file.readline()
             text = file.readline()
             pattern = pattern.rstrip()
