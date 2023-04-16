@@ -14,6 +14,7 @@ def read_input():
             text = nosaukums.readline()
             pattern = pattern.rstrip()
             text = text.rstrip()
+    print(pattern,text)
     return pattern, text
             
     # this function needs to aquire input both from keyboard and file
