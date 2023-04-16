@@ -9,9 +9,9 @@ def read_input():
        text = text.rstrip()
     elif "F" in text:
        nosaukums = input()
-       with open("nosaukums") as nosaukums:
-            pattern = nosaukums.readline()
-            text = nosaukums.readline()
+       with open(nosaukums) as file:
+            pattern = file.readline()
+            text = file.readline()
             pattern = pattern.rstrip()
             text = text.rstrip()
     return pattern, text
