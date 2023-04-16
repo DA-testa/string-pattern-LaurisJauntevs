@@ -3,7 +3,8 @@
 def read_input():
     text = input()
     if "I" in text:
-       pattern,text = map(str,input().split(" "))
+       pattern = str(input("input pattern: "))
+       text = str(input("input text: "))
        pattern = pattern.rstrip()
        text = text.rstrip()
     elif "F" in text:
