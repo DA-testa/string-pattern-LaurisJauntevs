@@ -2,14 +2,13 @@
 
 def read_input():
     text = input()
-    if "I" in text:
+    if 'I' in text:
        pattern = str(input("input pattern: "))
        text = str(input("input text: "))
        pattern = pattern.rstrip()
        text = text.rstrip()
     elif "F" in text:
-       nosaukums = input()
-       with open("tests/" + nosaukums) as file:
+       with open("tests/06") as file:
             pattern = file.readline()
             text = file.readline()
             pattern = pattern.rstrip()
